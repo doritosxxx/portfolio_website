@@ -19,5 +19,5 @@ $connecton = new mysqli(
 $response = $connecton->query("SELECT * FROM articles");
 
 while( $row = $response->fetch_array() ){
-    echo implode(" ", $row) . "<br>";
+    echo var_export($row, true);
 } 
