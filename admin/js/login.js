@@ -11,9 +11,12 @@ $().ready(function() {
             },
             success: function(response) {
                 response = JSON.parse(response);
-                console.log(response);
                 notification.new(response.message);
-
+                if (response.success === true) {
+                    setTimeout(
+                        () => location.replace("panel/"), 1000
+                    );
+                }
             }
         });
 
