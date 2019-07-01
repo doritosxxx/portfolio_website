@@ -15,9 +15,3 @@ $connecton = new mysqli(
     $db_info['db_name'],
     $db_info['port']
 );
-
-$response = $connecton->query("SELECT * FROM articles");
-
-while( $row = $response->fetch_array() ){
-    echo var_export($row, true);
-} 
