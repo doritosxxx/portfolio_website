@@ -1,0 +1,36 @@
+:root {
+    --color-blue: #4a90e2;
+    --color-pink: #E86E64;
+}
+
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+body {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;
+    max-width: 100%;
+}
+
+main {
+    width: 100%;
+    margin: 10px;
+    flex-grow: 1;
+}
+
+footer {
+    width: 100%;
+    min-height: 50px;
+    background: var(--color-pink);
+    padding: 10px;
+    box-sizing: border-box;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}

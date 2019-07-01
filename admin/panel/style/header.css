@@ -1,0 +1,36 @@
+header {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background: var(--color-pink);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+#tools {
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tools>div {
+    box-sizing: border-box;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px outset var(--color-blue);
+    flex-grow: 1;
+    text-align: center;
+    margin: 0 10px;
+    cursor: pointer;
+    background: white;
+    margin: 2px;
+}
+
+#tools>div:hover {
+    border-style: inset;
+    background: lightblue;
+}
