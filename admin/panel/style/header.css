@@ -28,6 +28,7 @@ h1 {
     cursor: pointer;
     background: white;
     margin: 2px;
+    transition: 0.5s all;
 }
 
 #tools>div.selected {
