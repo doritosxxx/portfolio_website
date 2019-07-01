@@ -1,7 +1,11 @@
 <?php
 
 function response($response){
-    echo json_encode($response);
+    if($response['success'] === true){
+        session_start();
+        $_SESSION["admin"] = true;
+    }
+    echo json_encode($response, JSON_UNESCAPED_UNICODE);
     exit;
 }
 

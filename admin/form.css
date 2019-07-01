@@ -50,6 +50,7 @@ fieldset {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    border-radius: 3px;
 }
 
 p {
@@ -84,4 +85,30 @@ input:not([type=submit]):valid+label {
     font-size: 80%;
     top: -15px;
     left: -5px;
+}
+
+#notification {
+    background: white;
+    width: 200px;
+    max-width: 100vw;
+    min-height: 100px;
+    border: 2px outset #4a90e2;
+    padding: 20px;
+    border-radius: 20px;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+#notification>div {
+    margin: 10px;
+    text-align: center;
+}
+
+#notification>button {
+    border-color: #4a90e2;
+    border-radius: 3px;
 }
