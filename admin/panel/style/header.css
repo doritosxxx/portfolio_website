@@ -30,7 +30,13 @@ h1 {
     margin: 2px;
 }
 
-#tools>div:hover {
+#tools>div.selected {
+    border-style: inset;
+    background: var(--color-blue);
+    cursor: default;
+}
+
+#tools>div:hover:not(.selected) {
     border-style: inset;
     background: lightblue;
 }

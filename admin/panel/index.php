@@ -12,6 +12,7 @@ if(!$_SESSION['admin']){
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 
         <script src="/js/jquery.js"></script>
+        <script src="/js/vue.js"></script>
 
         <link rel="stylesheet" href="style/main.css">
         <link rel="stylesheet" href="style/header.css">
@@ -25,20 +26,21 @@ if(!$_SESSION['admin']){
         <header>
             <h1>Панель управления сайтом</h1>
             <nav id="tools">
-                <div>Новый пост</div>
-                <div>Управление постами</div>
-                <div>Статистика</div>
-                <div>dolor sit</div>
+                <breadcrumbs-item 
+                    v-for="item in items" 
+                    :key="item.id" 
+                    :data="item" 
+                    :class="{selected: menu_item.selected === item.id}"
+                    >
+                </breadcrumbs-item>
             </nav>
         </header>
         <main>
             <!--новый пост-->
-            <div id="constructor">
+            <div id="constructor" v-if="this.selected===0">
                 <div id="elements">
                     <div>
-                        <div class="element">
-
-                        </div>
+                        <div class="element"></div>
                         <div class="element"></div>
                         <div class="element"></div>
                         <div class="element"></div>
@@ -60,10 +62,21 @@ if(!$_SESSION['admin']){
                     </div>
                 </div>
             </div>
+            <div id="post_management" v-if="this.selected===1">
+                Управление постами
+            </div>
+            <div id="statistics" v-if="this.selected===2">
+                Статистика
+            </div>
+            <div v-if="this.selected===3">
+                
+            </div>
+            <div v-if="this.selected===4"></div>
         </main>
         <footer>
             footer. This is simply dummy text
         </footer>
     </body>
+    <script src="js/breadcrumbs_menu.js"></script>
 
     </html>
