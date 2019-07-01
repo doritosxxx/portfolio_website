@@ -62,13 +62,14 @@ label {
     position: absolute;
     left: 3px;
     top: -2px;
-    transition: 1s all;
+    transition: 0.8s all;
 }
 
 input {
     border-width: 0;
     border-bottom: 3px solid #4a90e2;
     width: 100%;
+    font-size: 100%;
 }
 
 input[type=submit] {
@@ -83,7 +84,7 @@ input[type=submit] {
 input:not([type=submit]):focus+label,
 input:not([type=submit]):valid+label {
     font-size: 80%;
-    top: -15px;
+    top: -20px;
     left: -5px;
 }
 
