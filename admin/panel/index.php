@@ -41,16 +41,28 @@ if(!$_SESSION['admin']){
             <div id="constructor" v-if="this.selected===0">
                 <div id="elements">
                     <div>
-                        <div class="element"></div>
-                        <div class="element"></div>
+                        <div class="element">
+                            <span style="font-size:5em">T</span>
+                            <span>Заголовок</span>
+                        </div>
+                        <div class="element">
+                            <img src="" alt="Текст">
+                            <span>Текст</span>
+                        </div>
                         <div class="element"></div>
                         <div class="element"></div>
                         <div class="element"></div>
                         <div class="element"></div>
                     </div>
                     <div>
-                        <div class="element"></div>
-                        <div class="element"></div>
+                        <div class="element">
+                            <img src="https://images2.pixlis.com/background-image-vertical-lines-and-stripes-seamless-tileable-black-white-22rwu8.png" alt="Горизонтальная разметка">
+                            <div>Горизонтальная разметка</div>
+                        </div>
+                        <div class="element">
+                            <img style="transform:rotate(90deg);" src="https://images2.pixlis.com/background-image-vertical-lines-and-stripes-seamless-tileable-black-white-22rwu8.png" alt="Вертикальная разметка">
+                            <span>Вертикальная разметка</span>
+                            </div>
                         <div class="element"></div>
                         <div class="element"></div>
                         <div class="element"></div>
