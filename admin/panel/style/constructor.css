@@ -15,7 +15,7 @@
 }
 
 #elements>div {
-    flex-grow: 1;
+    /*flex-grow: 1;*/
 }
 
 .element {
@@ -71,4 +71,28 @@
 .block:empty:hover:after {
     color: var(--color-blue);
     background: white;
+}
+
+@media (max-width: 480px) {
+    #elements {
+        width: 100%;
+        height: 216px;
+        flex-direction: column;
+        /*overflow-y: hidden;*/
+        overflow: scroll;
+    }
+    #elements>div {
+        display: flex;
+        height: 100px;
+    }
+    .element {
+        flex-shrink: 0;
+    }
+    #constructor {
+        flex-direction: column;
+    }
+    #workspace {
+        margin-left: 5px;
+        margin-top: 220px;
+    }
 }
