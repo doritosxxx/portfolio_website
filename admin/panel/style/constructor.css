@@ -1,6 +1,5 @@
 #constructor {
     width: 100%;
-    min-height: 400px;
     display: flex;
     position: relative;
 }
@@ -14,10 +13,6 @@
     height: 100%;
 }
 
-#elements>div {
-    /*flex-grow: 1;*/
-}
-
 .element {
     width: 90px;
     height: 90px;
@@ -29,6 +24,7 @@
 }
 
 #workspace {
+    min-height: 400px;
     box-sizing: border-box;
     flex-grow: 1;
     margin: 5px;
