@@ -1,0 +1,41 @@
+#loader {
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader>div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    opacity: 0.6;
+    position: absolute;
+}
+
+#loader>div:first-child {
+    animation: resize 1s infinite alternate;
+    background: #4a90e2;
+}
+
+#loader>div:last-child {
+    animation: resize 1s infinite alternate-reverse;
+    background: #E86E64;
+}
+
+@keyframes resize {
+    0% {
+        width: 1px;
+        height: 1px;
+    }
+    100% {
+        width: 100px;
+        height: 100px;
+    }
+}

@@ -1,0 +1,59 @@
+:root[theme="dark"] {
+    --layer-0: #242424;
+    --layer-1: #484848;
+    --layer-2: #6C6C6C;
+    --layer-3: #909090;
+    --layer-4: #B4B4B4;
+    --layer-5: white;
+}
+
+:root[theme="light"] {
+    --layer-5: #242424;
+    --layer-4: #484848;
+    --layer-3: #6C6C6C;
+    --layer-2: #909090;
+    --layer-1: #B4B4B4;
+    --layer-0: white;
+}
+
+* {
+    transition: background 1s, color 1s, background-color 1s;
+}
+
+#theme {
+    position: fixed;
+    top: 30px;
+    left: 60px;
+    border: 3px outset lightseagreen;
+    border-radius: 15px;
+    background: lightseagreen;
+    width: 30px;
+    height: 30px;
+    transition: 1s all;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    user-select: none;
+    overflow: hidden;
+    font-size: 15px;
+    opacity: 0.3;
+}
+
+#theme:after {
+    content: "сменить тему";
+    flex-shrink: 0;
+    opacity: 0;
+    transition: 1s all;
+}
+
+#theme:hover {
+    width: 120px;
+    left: 17px;
+    opacity: 1;
+}
+
+#theme:hover:after {
+    opacity: 1;
+}

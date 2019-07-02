@@ -1,0 +1,15 @@
+#main_menu {
+    width: 100vw;
+    height: calc(100vh - 80px);
+    position: fixed;
+    left: 0;
+    top: -100vh;
+    /*на 1 меньше, чем loader*/
+    z-index: 9999998;
+    transition: 1s top;
+    background: var(--color-pink);
+}
+
+#main_menu.show {
+    top: 80px;
+}
