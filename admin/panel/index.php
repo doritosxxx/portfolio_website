@@ -56,11 +56,11 @@ if(!$_SESSION['admin']){
                     </div>
                     <div>
                         <div class="element">
-                            <img src="https://images2.pixlis.com/background-image-vertical-lines-and-stripes-seamless-tileable-black-white-22rwu8.png" alt="Горизонтальная разметка">
+                            <img src="" alt="Горизонтальная разметка">
                             <div>Горизонтальная разметка</div>
                         </div>
                         <div class="element">
-                            <img style="transform:rotate(90deg);" src="https://images2.pixlis.com/background-image-vertical-lines-and-stripes-seamless-tileable-black-white-22rwu8.png" alt="Вертикальная разметка">
+                            <img src="" alt="Вертикальная разметка">
                             <span>Вертикальная разметка</span>
                             </div>
                         <div class="element"></div>
