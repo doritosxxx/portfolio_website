@@ -3,6 +3,7 @@
     --color-grey: var(--color-gray);
     --color-blue: #4a90e2;
     --color-pink: #e86e64;
+    --color-yellow: #ffbf00;
 }
 
 a {
@@ -19,14 +20,14 @@ body {
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
 }
 
 main {
     flex-grow: 1;
-    box-shadow: 0 0 0 1px red inset;
 }
 
 #white_space {
-    height: calc(100vh - 80px);
+    height: 100vh;
     background: var(--color-blue);
 }

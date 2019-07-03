@@ -1,15 +1,62 @@
 #main_menu {
     width: 100vw;
-    height: calc(100vh - 80px);
+    height: 100vh;
     position: fixed;
     left: 0;
     top: -100vh;
-    /*на 1 меньше, чем loader*/
-    z-index: 9999998;
-    transition: 1s top;
-    background: var(--color-pink);
+    /*
+    на 2 меньше, чем loader;
+     на 1 меньше чем header;
+    */
+    z-index: 9999997;
+    transition: 0.5s top;
+    background: black;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    color: white;
+    padding-top: 120px;
+    box-sizing: border-box;
+    font-weight: bold;
 }
 
 #main_menu.show {
-    top: 80px;
+    top: 0;
+}
+
+#main_menu>* {
+    flex-grow: 1;
+}
+
+#main_menu>div:not(#follow) {
+    cursor: pointer;
+}
+
+#follow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#follow>span {
+    color: var(--color-yellow);
+    font-size: 1.5em;
+    line-height: 3em;
+}
+
+#social {
+    display: flex;
+    justify-content: space-around;
+}
+
+#social div {
+    margin: 0 10px;
+}
+
+#social svg {
+    max-height: 50px;
+    max-height: 50px;
+    color: white;
 }

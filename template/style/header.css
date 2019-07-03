@@ -1,7 +1,7 @@
 header {
     height: 80px;
+    width: 100%;
     background: white;
-    box-shadow: 0 0 0 1px blue inset;
     color: var(--color-gray);
     display: flex;
     justify-content: space-between;
@@ -9,6 +9,14 @@ header {
     padding: 20px;
     box-sizing: border-box;
     user-select: none;
+    position: fixed;
+    z-index: 9999998;
+    top: 0;
+    transition: 0.4s top;
+}
+
+header:not(.show) {
+    top: -80px;
 }
 
 #home_button {
@@ -24,18 +32,16 @@ header {
     font-size: 18px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    /*justify-content: flex-end;*/
     cursor: pointer;
 }
 
 #menu_button>span {
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .burger {
-    margin: 5px;
     width: 20px;
     height: 0px;
-    /*background: #393939;*/
     box-shadow: 0 0 0 1px var(--color-gray), 0 7px 0 1px var(--color-gray), 0 -7px 0 1px var(--color-gray);
 }
