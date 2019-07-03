@@ -30,4 +30,42 @@ main {
 #white_space {
     height: 100vh;
     background: var(--color-blue);
+    position: relative;
+}
+
+#mouse {
+    width: 20px;
+    height: 40px;
+    border: 2px solid var(--color-gray);
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 40px;
+    left: calc(50% - 10px);
+}
+
+#mouse::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 3px;
+    background: var(--color-gray);
+    position: relative;
+    top: 5px;
+    left: calc(50% - 2.5px);
+    animation: 1.5s mouse_scroll infinite linear;
+}
+
+@keyframes mouse_scroll {
+    0% {
+        opacity: 0.1;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        top: 25px;
+        opacity: 0.3;
+    }
 }
