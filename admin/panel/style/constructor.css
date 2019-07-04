@@ -17,7 +17,7 @@
     width: 90px;
     height: 90px;
     box-sizing: border-box;
-    border: 2px solid #4a90e2;
+    border: 2px solid var(--color-blue);
     margin: 5px;
     border-radius: 5px;
     padding: 5px;
@@ -33,7 +33,7 @@
 .element:hover {
     border-style: outset;
     box-shadow: 0px 0 10px 1px rgba(0, 0, 0, 0.5);
-    color: #e86e64;
+    color: var(--color-pink);
 }
 
 .element>img {
@@ -47,7 +47,7 @@
     flex-grow: 1;
     margin: 5px;
     margin-left: 220px;
-    border: 3px dashed #4a90e2;
+    border: 3px dashed var(--color-blue);
 }
 
 .post {
@@ -75,15 +75,15 @@
     font-weight: bolder;
     top: calc(50% - 20px);
     left: calc(50% - 20px);
-    background: #4a90e2;
-    border: 2px solid #4a90e2;
+    background: var(--color-blue);
+    border: 2px solid var(--color-blue);
     border-radius: 50%;
     text-align: center;
     transition: 0.5s all;
 }
 
 .block:empty:hover:after {
-    color: #4a90e2;
+    color: var(--color-blue);
     background: white;
 }
 

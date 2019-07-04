@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    const debugInput = document.querySelector("input");
+    var debugInput = document.querySelector("input");
 
     function updateDebugState() {
         document.body.classList.toggle('debug-on', debugInput.checked);
