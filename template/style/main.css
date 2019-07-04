@@ -109,15 +109,97 @@ main {
     }
 }
 
-
-/*
 #person_section {
     background: white;
     height: 100%;
     box-sizing: border-box;
-    padding: 10px;
-    box-shadow: 0 0 0 2px #e86e64 inset;
-}*/
+    padding: 10vmin;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#person_img {
+    height: 60vmin;
+    width: 60vmin;
+    background: url(/template/img/me.webp);
+    background-position: center center;
+    background-size: cover;
+    background-clip: content-box;
+    padding: 2vmin;
+    border: 3px var(--color-gray) dashed;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+#person_introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 6vmin;
+}
+
+#person_introduction h2 {
+    /*лучше не менять*/
+    font-size: calc( (100vw - 80vmin) / 12);
+    line-height: 0;
+    color: var(--color-gray);
+    font-weight: 600;
+}
+
+#name_wrapper {
+    margin: 3vw 0;
+}
+
+#person_introduction>div {
+    font-size: 2vmin;
+}
+
+.decoration {
+    width: 100%;
+    height: 0px;
+    position: relative;
+    background: gold;
+}
+
+.decoration::after,
+.decoration::before {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    position: absolute;
+    top: 0;
+    background: black;
+}
+
+.decoration::after {
+    left: 0;
+    background: linear-gradient(90deg, transparent, black);
+}
+
+.decoration::before {
+    right: 0;
+    background: linear-gradient(90deg, black, transparent);
+}
+
+@media (max-width: 750px) {
+    #person_section {
+        margin-top: 12vh;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    #person_introduction h2 {
+        font-size: 7vw;
+        margin: 40px 0;
+    }
+    #person_introduction>div {
+        font-size: 2.5vw;
+    }
+    #p_group2 {
+        height: 150vh;
+    }
+}
 
 #p_background_image {
     background: url(https://www.nastol.com.ua/pic/201805/1920x1080/nastol.com.ua-286779.jpg);
