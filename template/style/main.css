@@ -151,7 +151,7 @@ main {
     margin: 3vw 0;
 }
 
-#person_introduction>div {
+#person_introduction p {
     font-size: 2vmin;
 }
 
@@ -189,12 +189,19 @@ main {
         flex-direction: column;
         justify-content: flex-start;
     }
+    #person_img {
+        height: 50vmin;
+        width: 50vmin;
+    }
+    #person_introduction {
+        margin: 0;
+    }
     #person_introduction h2 {
         font-size: 7vw;
-        margin: 40px 0;
+        margin: 20px 0;
     }
-    #person_introduction>div {
-        font-size: 2.5vw;
+    #person_introduction p {
+        font-size: 2.5vmin;
     }
     #p_group2 {
         height: 150vh;
