@@ -111,79 +111,9 @@ main {
     grid-template-columns: repeat(4, 1fr);
 }
 
-
-/*start gallery 1*/
-
-#gallery1 {
-    grid-template-areas: "gallery_item1 gallery_item1 gallery_item2 gallery_item3" "gallery_item1 gallery_item1 gallery_item4 gallery_item5";
-}
-
-#gallery_item1 {
-    grid-area: gallery_item1;
-    background: var(--color-blue);
-}
-
-#gallery_item2 {
-    grid-area: gallery_item2;
-    background: var(--color-gray);
-}
-
-#gallery_item3 {
-    grid-area: gallery_item3;
-    background: var(--color-lightgray);
-}
-
-#gallery_item4 {
-    grid-area: gallery_item4;
-    background: var(--color-pink);
-}
-
-#gallery_item5 {
-    grid-area: gallery_item5;
-    background: var(--color-yellow);
-}
-
-
-/*end gallery 1*/
-
 #p_background_image {
     background: url(https://www.nastol.com.ua/pic/201805/1920x1080/nastol.com.ua-286779.jpg);
 }
-
-
-/*start gallery 2*/
-
-#gallery2 {
-    grid-template-areas: "gallery_item6 gallery_item7 gallery_item10 gallery_item10" "gallery_item8 gallery_item9 gallery_item10 gallery_item10";
-}
-
-#gallery_item6 {
-    grid-area: gallery_item6;
-    background: var(--color-gray);
-}
-
-#gallery_item7 {
-    grid-area: gallery_item7;
-    background: var(--color-pink);
-}
-
-#gallery_item8 {
-    grid-area: gallery_item8;
-    background: var(--color-yellow);
-}
-
-#gallery_item9 {
-    grid-area: gallery_item9;
-    background: var(--color-lightgrey);
-}
-
-#gallery_item10 {
-    grid-area: gallery_item10;
-    background: var(--color-blue);
-}
-
-
-/*end gallery 1*/
 
 #projects_section {
     background: white;

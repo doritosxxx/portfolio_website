@@ -20,8 +20,10 @@
     height: 50vh;
 }
 
-.parallax_group.gallerysize {
-    height: 50vw;
+@media (max-width: 480px) {
+    .parallax_group.gallerysize {
+        height: 200vw;
+    }
 }
 
 .parallax_layer {
