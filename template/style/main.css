@@ -109,15 +109,16 @@ main {
     }
 }
 
-#p_background_image {
-    background: url(https://www.nastol.com.ua/pic/201805/1920x1080/nastol.com.ua-286779.jpg);
-}
 
-#projects_section {
+/*
+#person_section {
     background: white;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 4vw;
+    box-sizing: border-box;
+    padding: 10px;
+    box-shadow: 0 0 0 2px #e86e64 inset;
+}*/
+
+#p_background_image {
+    background: url(https://www.nastol.com.ua/pic/201805/1920x1080/nastol.com.ua-286779.jpg);
 }
