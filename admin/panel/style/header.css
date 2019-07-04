@@ -2,7 +2,7 @@ header {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    background: var(--color-pink);
+    background: #e86e64;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -21,7 +21,7 @@ h1 {
     box-sizing: border-box;
     padding: 5px;
     border-radius: 5px;
-    border: 2px outset var(--color-blue);
+    border: 2px outset #4a90e2;
     flex-grow: 1;
     text-align: center;
     margin: 0 10px;
@@ -33,7 +33,7 @@ h1 {
 
 #tools>div.selected {
     border-style: inset;
-    background: var(--color-blue);
+    background: #4a90e2;
     cursor: default;
 }
 

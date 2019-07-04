@@ -2,7 +2,7 @@ header {
     height: 80px;
     width: 100%;
     background: rgba(255, 255, 255, 0.8);
-    color: var(--color-gray);
+    color: #393939;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -23,7 +23,7 @@ header:not(.show) {
     font-weight: 900;
     text-transform: uppercase;
     font-size: 30px;
-    color: var(--color-gray);
+    color: #393939;
 }
 
 #menu_button {
@@ -43,5 +43,5 @@ header:not(.show) {
 .burger {
     width: 20px;
     height: 0px;
-    box-shadow: 0 0 0 1px var(--color-gray), 0 7px 0 1px var(--color-gray), 0 -7px 0 1px var(--color-gray);
+    box-shadow: 0 0 0 1px #393939, 0 7px 0 1px #393939, 0 -7px 0 1px #393939;
 }

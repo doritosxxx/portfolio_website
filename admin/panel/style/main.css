@@ -29,7 +29,7 @@ main {
 footer {
     width: 100%;
     min-height: 50px;
-    background: var(--color-pink);
+    background: #e86e64;
     padding: 10px;
     box-sizing: border-box;
     border-top-left-radius: 5px;
