@@ -38,6 +38,7 @@ body {
     align-items: center;
     border-radius: .5vmin;
     opacity: 0;
+    box-shadow: 0 0 2px 1px var(--color-gray);
 }
 
 #up::before,
@@ -50,17 +51,17 @@ body {
 }
 
 #up::before {
-    width: 60%;
-    height: 60%;
+    width: 50%;
+    height: 50%;
     border-left: 1vmin solid white;
     border-top: 1vmin solid white;
     transform: rotate(45deg);
 }
 
 #up::after {
-    width: 1.2vmin;
-    height: 4.5vmin;
-    bottom: 1vmin;
+    width: 1.1vmin;
+    height: 4vmin;
+    bottom: 1.2vmin;
     background-color: white;
 }
 
