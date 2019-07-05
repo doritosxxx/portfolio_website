@@ -122,7 +122,7 @@ main {
 #person_img {
     height: 60vmin;
     width: 60vmin;
-    background: url(/template/img/me.webp);
+    background: url(/img/me.webp);
     background-position: center center;
     background-size: cover;
     background-clip: content-box;

@@ -3,16 +3,171 @@
 
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-    <meta name="yandex-verification" content="345370805286bd4f" />
-    <script src="js/jquery.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--loader-->
+    <link rel="stylesheet" href="style/loader.css">
+    <script src="js/loader.js"></script>
 
+    <!--font-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/gallery.css">
+    <link rel="stylesheet" href="style/parallax.css">
+
+    <!--<link rel="stylesheet" href="style/themes.css">
+    <script src="js/theme.js"></script>-->
+    <script src="js/parallax_debug.js"></script>
+
+    <script src="js/header.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="/js/prefixfree.js"></script>
 </head>
 
 <body>
-    <div id="feed">
-
+    <div id="loader">
+        <div></div>
+        <div></div>
     </div>
+    <!--remove-->
+    <div class="debug" style="
+        position: fixed;
+        top: 0;
+        left: 6em;
+        z-index: 99999999999999999;
+        background: black;
+        color: #fff;
+        padding: .5em;
+        border-radius: 0 0 5px 5px;">
+        <label>
+            <input type="checkbox"> Debug
+        </label>
+    </div>
+
+    <div id="main_menu">
+
+        <div>Главная</div>
+        <div>О нас</div>
+        <div>Услуги</div>
+        <div>Портфолио</div>
+        <div>Связаться</div>
+
+        <div id="follow">
+            <span>Follow me</span>
+            <div id="social">
+                <!--TODO add links and images-->
+                <a target="_blank" href="https://ru-ru.facebook.com/people/%D0%90%D0%BD%D0%B0%D1%81%D1%82%D0%B0%D1%81%D0%B8%D1%8F-%D0%94%D1%83%D0%BD%D0%B0%D0%B5%D0%B2%D0%B0/100004245519207">
+                    <img src="/img/facebook.svg" alt="facebook">
+                </a>
+                <a target="_blank" href="https://www.instagram.com/design_dekor_dunaeva/">
+                    <img src="/img/instagram.svg" alt="instagram">
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
+    <header class="show">
+        <a href="/">
+            <div id="home_button">
+                home
+            </div>
+        </a>
+        <div id="menu_button">
+            <span>menu</span>
+            <div class="burger"></div>
+        </div>
+    </header>
+
+
+    <main class="parallax">
+
+        <div class="parallax_group fullsize" id="p_group1">
+            <div class="parallax_layer parallax_layer--base">
+                <div id="white_space">
+                    <div id="words_box">
+                        <div id="main_name">
+                            <span>Декор</span>
+                            <span style="font-size: 6vw;line-height: 0.5;">
+                                на
+                            </span>
+                            <span>Ордынке</span>
+                        </div>
+                        <span>Дизайн-студия Анастасии Дунаевой</span>
+                    </div>
+
+                    <div id="mouse"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax_group fullsize" id="p_group2">
+            <div class="parallax_layer parallax_layer--base"></div>
+            <div class="parallax_layer parallax_layer--back">
+                <div id="person_section">
+                    <div id="person_img"></div>
+                    <div id="person_introduction">
+                        <div id="name_wrapper">
+                            <h2>Анастасия&nbsp;Дунаева</h2>
+                            <div class="decoration"></div>
+                        </div>
+
+                        <div>
+                            <p>Руководитель студии «Декор на Ордынке» - действующий дизайнер интерьера Анастасия Дунаева , участник Московской Лиги деятелей культуры и искусства «Метрополис».</p>
+                            <p>Опытный дизайнер, на ее счету более 30 реализованных проектов. Когда-то она занималась информационными технологиями, но потом увлеклась дизайном и закончила НИМ – факультет дизайна архитектурной среды. С 2005 г. самостоятельно
+                                ведет проекты, преимущественно «под ключ».</p>
+                            <p>Летом 2011 г. открыла компанию «Арт-релакс», в рамках которой занимается архитектурой, проектированием и дизайном. А также продвигает свой авторский проект «Живая картина»: живопись, совмещенная со световыми инсталляциями.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax_group gallerysize" id="p_group3">
+            <div class="parallax_layer parallax_layer--base">
+                <div id="gallery1" class="grid_gallery">
+                    <div id="gallery_item1"></div>
+                    <div id="gallery_item2"></div>
+                    <div id="gallery_item3"></div>
+                    <div id="gallery_item4"></div>
+                    <div id="gallery_item5"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="parallax_group" id="p_group4" style="height: 75vh">
+            <div class="parallax_layer parallax_layer--base"></div>
+            <div class="parallax_layer parallax_layer--back" id="p_background_image"></div>
+        </div>
+
+        <div class="parallax_group gallerysize" id="p_group5">
+            <div class="parallax_layer parallax_layer--base">
+                <div id="gallery2" class="grid_gallery">
+                    <div id="gallery_item6"></div>
+                    <div id="gallery_item7"></div>
+                    <div id="gallery_item8"></div>
+                    <div id="gallery_item9"></div>
+                    <div id="gallery_item10"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="parallax_group" id="p_group6" style="height: 50px">
+
+            <div class="parallax_layer parallax_layer--base">
+                <footer>
+                    <span>© Дизайн-студия "Декор на Ордынке"</span>
+                </footer>
+            </div>
+        </div>
+    </main>
+
 </body>
 
 </html>
