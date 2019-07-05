@@ -25,6 +25,45 @@ body {
     min-height: 100vh;
 }
 
+#up {
+    width: 7vmin;
+    height: 7vmin;
+    position: fixed;
+    z-index: 100;
+    left: 3vmin;
+    bottom: 3vmin;
+    background-color: var(--color-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5vmin;
+    opacity: 0;
+}
+
+#up::before,
+#up::after {
+    position: absolute;
+    content: "";
+    box-sizing: border-box;
+    display: block;
+    cursor: pointer;
+}
+
+#up::before {
+    width: 60%;
+    height: 60%;
+    border-left: 1vmin solid white;
+    border-top: 1vmin solid white;
+    transform: rotate(45deg);
+}
+
+#up::after {
+    width: 1.2vmin;
+    height: 4.5vmin;
+    bottom: 1vmin;
+    background-color: white;
+}
+
 main {
     flex-grow: 1;
     /*debug*/
