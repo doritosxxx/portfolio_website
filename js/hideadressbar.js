@@ -1,6 +1,6 @@
 function hideAddressBar() {
     setTimeout(function() {
-        document.body.style.height = window.outerHeight + 'px';
+        document.body.style.height = "100vh";
         setTimeout(function() {
             window.scrollTo(0, 1);
         }, 1100);
