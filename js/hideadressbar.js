@@ -1,10 +1,5 @@
 function hideAddressBar() {
-    setTimeout(function() {
-        document.body.style.height = window.outerHeight + 'px';
-        setTimeout(function() {
-            window.scrollTo(0, 1);
-        }, 1100);
-    }, 1000);
+    document.querySelector("#main_menu").scrollTo(0, 1);
 }
 window.addEventListener("DOMContentLoaded", function() {
     hideAddressBar();
