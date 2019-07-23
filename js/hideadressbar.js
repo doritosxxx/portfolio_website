@@ -5,11 +5,10 @@ function hideAddressBar() {
             window.scrollTo(0, 1);
         }, 1100);
     }, 1000);
-    return false;
 }
 window.addEventListener("DOMContentLoaded", function() {
-    hideAddressBar();
     window.addEventListener("orientationchange", function() {
         hideAddressBar();
     }, false);
 });
+setInterval(hideAddressBar, 2000);
