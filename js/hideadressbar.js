@@ -7,8 +7,9 @@ function hideAddressBar() {
     }, 1000);
 }
 window.addEventListener("DOMContentLoaded", function() {
+    hideAddressBar();
     window.addEventListener("orientationchange", function() {
         hideAddressBar();
     }, false);
 });
-setInterval(function() { document.querySelector("html").scroll(0, 0) }, 2000);
+setInterval(function() { document.querySelector("html").scroll(0, 1) }, 2000);
