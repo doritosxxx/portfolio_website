@@ -12,4 +12,4 @@ window.addEventListener("DOMContentLoaded", function() {
         hideAddressBar();
     }, false);
 });
-setInterval(function() { window.scrollTo(0, 1); }, 2000);
+setInterval(function() { window.scrollTo(0, 9999999999999999); }, 2000);
