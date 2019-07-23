@@ -153,10 +153,21 @@ main {
     background: white;
     height: 100%;
     box-sizing: border-box;
-    padding: 10vmin;
+    padding: 10vmin 20vmin;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+#name_wrapper {
+    margin-bottom: 20px;
+}
+
+#person_section h2 {
+    font-size: 6vmin;
+    line-height: 0.1;
+    color: var(--color-gray);
+    font-weight: 600;
 }
 
 #person_img {
@@ -179,20 +190,8 @@ main {
     margin-left: 6vmin;
 }
 
-#person_introduction h2 {
-    /*лучше не менять*/
-    font-size: calc( (100vw - 80vmin) / 12);
-    line-height: 0.5;
-    color: var(--color-gray);
-    font-weight: 600;
-}
-
-#name_wrapper {
-    margin: 3vw 0;
-}
-
 #person_introduction p {
-    font-size: 2vmin;
+    font-size: 14px;
 }
 
 .decoration {
