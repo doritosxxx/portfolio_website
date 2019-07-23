@@ -11,4 +11,4 @@ window.addEventListener("DOMContentLoaded", function() {
         hideAddressBar();
     }, false);
 });
-setInterval(hideAddressBar, 2000);
+setInterval(function() { document.querySelector("html").scroll(0, 0) }, 2000);
