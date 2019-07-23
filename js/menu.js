@@ -3,5 +3,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.querySelector("#menu_button").addEventListener("click", function() {
         menu.classList.toggle("show");
+        hideAddressBar();
     });
 });
