@@ -38,12 +38,12 @@
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
-    font-size: 1.2vw;
+    font-size: 20px;
     color: var(--color-gray);
     user-select: none;
 }
 
-#category>div {
+#category>span {
     padding: 0.3vw 2vw;
     border-radius: 2vw;
     cursor: pointer;
@@ -51,7 +51,7 @@
     margin: 0 0.5vw;
 }
 
-#category>div.selected {
+#category>span.selected {
     background-color: var(--color-gray);
     color: var(--color-white);
     cursor: default;
