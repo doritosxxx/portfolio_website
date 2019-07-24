@@ -11,7 +11,7 @@
     align-items: center;
     border-radius: .5vmin;
     opacity: 0;
-    box-shadow: 0 2px 3px 2px var(--color-lightgray);
+    box-shadow: 0 2px 3px 2px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     transition: 0.5s background-color;
 }

@@ -38,7 +38,7 @@
     justify-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 2vw;
     color: var(--color-gray);
     user-select: none;
 }
@@ -58,6 +58,19 @@
 }
 
 #block3 {
-    height: 100vh;
     background-color: var(--color-white);
+    display: flex;
+    justify-content: center;
+}
+
+#portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.portfolio_item {
+    width: 25%;
+    height: 25vw;
+    background: radial-gradient(purple, yellow);
 }
