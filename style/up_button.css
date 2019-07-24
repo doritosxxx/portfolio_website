@@ -1,0 +1,44 @@
+#up {
+    width: 7vmin;
+    height: 7vmin;
+    position: fixed;
+    z-index: 100;
+    left: 3vmin;
+    bottom: 3vmin;
+    background-color: var(--color-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .5vmin;
+    opacity: 0;
+    box-shadow: 0 2px 3px 2px var(--color-lightgray);
+    cursor: pointer;
+    transition: 0.5s background-color;
+}
+
+#up::before,
+#up::after {
+    position: absolute;
+    content: "";
+    box-sizing: border-box;
+    display: block;
+}
+
+#up::before {
+    width: 50%;
+    height: 50%;
+    border-left: 1vmin solid white;
+    border-top: 1vmin solid white;
+    transform: rotate(45deg);
+}
+
+#up::after {
+    width: 1.1vmin;
+    height: 4vmin;
+    bottom: 1.2vmin;
+    background-color: white;
+}
+
+#up:hover {
+    background-color: var(--color-black);
+}

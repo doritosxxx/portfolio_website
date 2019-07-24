@@ -34,8 +34,10 @@
     cursor: pointer;
 }
 
-#main_menu a:visited {
-    color: inherit;
+#main_menu a,
+#main_menu a:visited,
+#main_menu a:link {
+    color: var(--color-white);
 }
 
 #follow {

@@ -1,0 +1,63 @@
+#background_image {
+    background-image: url(/img/background3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 52.1vw;
+    z-index: -9999;
+}
+
+#block1 {
+    height: 35vw;
+    background-color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#block1 h2 {
+    font-size: 6vw;
+    color: var(--color-gray);
+    letter-spacing: -0.2vw;
+}
+
+#block2 {
+    padding: 5vh 2vw;
+    background-color: var(--color-white);
+    font-weight: 900;
+}
+
+#category {
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.2vw;
+    color: var(--color-gray);
+    user-select: none;
+}
+
+#category>div {
+    padding: 0.3vw 2vw;
+    border-radius: 2vw;
+    cursor: pointer;
+    transition: 0.5s color, 0.5s background-color;
+    margin: 0 0.5vw;
+}
+
+#category>div.selected {
+    background-color: var(--color-gray);
+    color: var(--color-white);
+    cursor: default;
+}
+
+#block3 {
+    height: 100vh;
+    background-color: var(--color-white);
+}
