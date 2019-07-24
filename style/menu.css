@@ -75,5 +75,5 @@
 }
 
 #main_menu:not(.add_padding) {
-    padding-top: 0;
+    padding-top: 10px;
 }
