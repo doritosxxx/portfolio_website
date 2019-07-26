@@ -14,7 +14,7 @@ $().ready(function() {
                 notification.new(response.message);
                 if (response.success === true) {
                     setTimeout(
-                        () => location.replace("panel/"), 1000
+                        () => location.replace("portfolio/"), 1000
                     );
                 }
             }

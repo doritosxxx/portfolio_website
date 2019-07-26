@@ -35,6 +35,10 @@ const notification = {
 };
 
 $().ready(function() {
+    $(`<div id="notification" style="display: none;">
+            <div>sample text</div>
+            <button type="button">OK</button>
+        </div>`).appendTo("body");
     notification.self = $("#notification");
     $("#notification > button").on("click", () => notification.close());
 });

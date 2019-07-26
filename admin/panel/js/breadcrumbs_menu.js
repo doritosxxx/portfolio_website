@@ -20,7 +20,7 @@ new Vue({
             { id: 0, title: 'Новый пост' },
             { id: 1, title: 'Управление постами' },
             { id: 2, title: 'Статистика' },
-            { id: 3, title: 'Dolor sit' },
+            { id: 3, title: 'Управление портфолио' },
             { id: 4, title: 'sample text' }
         ],
         menu_item: menu

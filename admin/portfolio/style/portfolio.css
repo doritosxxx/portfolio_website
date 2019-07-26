@@ -1,0 +1,147 @@
+#portfolio {
+    display: flex;
+}
+
+#portfolio h2 {
+    text-align: center;
+    line-height: 0;
+}
+
+#portfolio>* {
+    width: 50%;
+}
+
+#portfolio_wrapper {
+    overflow-x: auto;
+}
+
+#portfolio_list>* {
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 5px;
+    overflow: hidden;
+    border: 2px dashed var(--color-blue);
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+
+/*debug*/
+
+#portfolio_list>*:not(#new) {
+    display: flex;
+    align-items: center;
+    transition: 0.5s background-color;
+    position: relative;
+}
+
+#portfolio_list>*:not(#new):hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#portfolio_list .image_wrapper {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio_list img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#portfolio_list h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+
+/*sorry*/
+
+#portfolio_list>*:not(#new)>*:last-child>*:last-child {
+    font-size: 20px;
+    /*calc((50vw - 102px)/20)*/
+}
+
+.delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: red;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    border-bottom-left-radius: 5px;
+    border: 4px solid red;
+    box-sizing: border-box;
+}
+
+.delete:hover {
+    border-style: inset;
+}
+
+#new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#new:after {
+    content: "+";
+    width: 30px;
+    height: 30px;
+    color: white;
+    position: absolute;
+    display: block;
+    background: var(--color-blue);
+    border: 2px solid var(--color-blue);
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.5s all;
+    font-weight: bolder;
+}
+
+#new:hover:after {
+    color: var(--color-blue);
+    background: white;
+}
+
+#workspace>form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#workspace>form>* {
+    flex-shrink: 0;
+}
+
+#preview_wrapper {
+    width: 40vw;
+    height: 20vw;
+    box-sizing: border-box;
+    border: 2px solid var(--color-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#preview_wrapper img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#workspace textarea {
+    max-width: 90%;
+    min-width: 90%;
+}
+
+.float_left {
+    align-self: flex-start;
+}

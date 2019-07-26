@@ -1,5 +1,4 @@
 <?php
-const BR = "<BR>";
 $db_info =[
     "username"=>"Qhve9YdhKG",
     "db_name"=>"Qhve9YdhKG",
@@ -15,3 +14,10 @@ $db = new mysqli(
     $db_info['db_name'],
     $db_info['port']
 );
+$id = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_NUMBER_INT);
+$id = (int)$id;
+
+$image = mysqli_fetch_assoc($db->query("SELECT image FROM portfolio WHERE id = $id"))['image'];
+
+header("Content-type: image/png"); //?TODO работает - не трогай
+echo $image;

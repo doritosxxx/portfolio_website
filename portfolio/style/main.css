@@ -80,6 +80,7 @@
     color: transparent;
     justify-content: center;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .portfolio_item>span {

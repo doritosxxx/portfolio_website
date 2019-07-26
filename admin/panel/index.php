@@ -15,9 +15,16 @@ if(!$_SESSION['admin']){
         <script src="/js/jquery.js"></script>
         <script src="/js/vue.js"></script>
 
+        <link rel="stylesheet" href="/style/notification.css">
+        <script src="/js/notification.js"></script>
+
+
+        <script src="js/load_portfolio.js"></script>
+
         <link rel="stylesheet" href="style/main.css">
         <link rel="stylesheet" href="style/header.css">
         <link rel="stylesheet" href="style/constructor.css">
+        <link rel="stylesheet" href="style/portfolio.css">
 
         <script src="/js/prefixfree.js"></script>
         <!--prefixfree after css-->
@@ -78,12 +85,12 @@ if(!$_SESSION['admin']){
             <div id="post_management" v-if="this.selected===1">
                 Управление постами
             </div>
+            <!--статистика-->
             <div id="statistics" v-if="this.selected===2">
                 Статистика
             </div>
-            <div v-if="this.selected===3">
-                
-            </div>
+            <!--управление портфолио-->
+            
             <div v-if="this.selected===4"></div>
         </main>
         <footer>

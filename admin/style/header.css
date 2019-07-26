@@ -17,7 +17,7 @@ h1 {
     flex-wrap: wrap;
 }
 
-#tools>div {
+#tools>a {
     box-sizing: border-box;
     padding: 5px;
     border-radius: 5px;
@@ -29,15 +29,17 @@ h1 {
     background: white;
     margin: 2px;
     transition: 0.5s all;
+    text-decoration: none;
+    color: black;
 }
 
-#tools>div.selected {
+#tools>a.selected {
     border-style: inset;
     background: var(--color-blue);
     cursor: default;
 }
 
-#tools>div:hover:not(.selected) {
+#tools>a:hover:not(.selected) {
     border-style: inset;
     background: lightblue;
 }
