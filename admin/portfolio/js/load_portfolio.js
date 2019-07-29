@@ -43,6 +43,6 @@ $.post("php/get_portfolio.php")
     }).always(function() {
         $("#portfolio_list").append(`<div id="new"></div>`);
 
-        var portfolioLoaded = new CustomEvent("portfolioLoaded");
+        let portfolioLoaded = new CustomEvent("portfolioLoaded");
         document.dispatchEvent(portfolioLoaded);
     })

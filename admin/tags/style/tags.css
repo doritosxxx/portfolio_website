@@ -1,0 +1,84 @@
+main {
+    display: flex;
+}
+
+main h2 {
+    text-align: center;
+    line-height: 0;
+}
+
+main>* {
+    width: 50%;
+}
+
+#tag_wrapper {
+    overflow-x: auto;
+}
+
+#tag_list>* {
+    width: 100%;
+    height: 80px;
+    box-sizing: border-box;
+    padding: 5px;
+    overflow: hidden;
+    border: 2px dashed var(--color-blue);
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+#tag_list>*:not(#new) {
+    display: flex;
+    align-items: center;
+    transition: 0.5s background-color;
+    position: relative;
+}
+
+#tag_list>*:not(#new):hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#new {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+#new:after {
+    content: "+";
+    width: 30px;
+    height: 30px;
+    color: white;
+    position: absolute;
+    display: block;
+    background: var(--color-blue);
+    border: 2px solid var(--color-blue);
+    border-radius: 50%;
+    text-align: center;
+    transition: 0.5s all;
+    font-weight: bolder;
+}
+
+#new:hover:after {
+    color: var(--color-blue);
+    background: white;
+}
+
+.delete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: red;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    border-bottom-left-radius: 5px;
+    border: 4px solid red;
+    box-sizing: border-box;
+}
+
+.delete:hover {
+    border-style: inset;
+}

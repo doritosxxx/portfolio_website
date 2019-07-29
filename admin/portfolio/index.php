@@ -37,6 +37,7 @@ if(!$_SESSION['admin']){
             <h1>Панель управления сайтом</h1>
             <nav id="tools">
                 <a href="../portfolio" class="selected">Управление портфолио</a>
+                <a href="../tags">Управление тегами</a>
                 <a href="../statistics">Статистика</a>
             </nav>
         </header>

@@ -46,7 +46,6 @@ document.addEventListener("portfolioLoaded", function() {
             notification.new("Не удалось удалить элемент по неизвестной причине");
         }).done(function(data) {
             data = JSON.parse(data);
-            console.log(data);
             if (data.success) {
                 $(`[data-id=${id}]`).hide(500, function() {
                     $(this).remove();
