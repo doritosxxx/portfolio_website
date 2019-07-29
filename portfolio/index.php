@@ -38,7 +38,7 @@
     </div>
 
     <div id="up"></div>
-
+    <div id="fixed_email"></div>
     <div id="main_menu" class="add_padding">
 
         <div>

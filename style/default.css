@@ -28,3 +28,21 @@ body {
 main {
     flex-grow: 1;
 }
+
+#fixed_email {
+    width: 100%;
+    position: fixed;
+    color: var(--color-gray);
+    z-index: 9999999;
+    display: flex;
+    justify-content: center;
+}
+
+#fixed_email:after {
+    content: "prontp@inbox.ru";
+    display: block;
+    background-color: var(--color-white);
+    padding: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
