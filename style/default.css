@@ -36,13 +36,11 @@ main {
     z-index: 9999999;
     display: flex;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 15px;
+    height: 20px;
 }
 
 #fixed_email:after {
-    content: "prontp@inbox.ru";
-    display: block;
-    background-color: var(--color-white);
-    padding: 5px;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
+    content: "prontp@inbox.ru  +7 916 887-36-44";
 }
