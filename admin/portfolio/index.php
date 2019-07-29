@@ -68,7 +68,30 @@ if(!$_SESSION['admin']){
                             <div class="float_left">
                                 <label for="tag">Тег</label>
                                 <select name="tag" id="tag" required="">
-                                    <option value="0">no tag</option>
+                                    <?php
+                                        
+                                        $db_info =[
+                                            "username"=>"Qhve9YdhKG",
+                                            "db_name"=>"Qhve9YdhKG",
+                                            "password"=>"AvVYDL39iH",
+                                            "server"=>"remotemysql.com",
+                                            "port"=>"3306"
+                                        ];
+                                        
+                                        $db = new mysqli(
+                                            $db_info['server'],
+                                            $db_info['username'],
+                                            $db_info['password'],
+                                            $db_info['db_name'],
+                                            $db_info['port']
+                                        );
+                                        $options = $db->query("SELECT * FROM tags");
+                                        while($row = mysqli_fetch_assoc($options)){
+                                            $name = $row["name"];
+                                            $id = $row["id"];
+                                            echo "<option value=\"$id\">$name</option>";
+                                        }
+                                    ?>
                                 </select>
                             </div>
                             <textarea required name="description" id="description" cols="30" rows="10" placeholder="Описание"></textarea>

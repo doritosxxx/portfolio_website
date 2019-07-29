@@ -98,14 +98,52 @@
         </div>
         <div id="block2">
             <div id="category">
-                <span class="selected">Все</span>
-                <span>категория 1</span>
-                <span>категория 2</span>
-                <span>категория 3</span>
+                <?php
+                    $db_info =[
+                        "username"=>"Qhve9YdhKG",
+                        "db_name"=>"Qhve9YdhKG",
+                        "password"=>"AvVYDL39iH",
+                        "server"=>"remotemysql.com",
+                        "port"=>"3306"
+                    ];
+                    
+                    $db = new mysqli(
+                        $db_info['server'],
+                        $db_info['username'],
+                        $db_info['password'],
+                        $db_info['db_name'],
+                        $db_info['port']
+                    );
+                    $category = $db->query("SELECT * FROM tags");
+                    echo "<span data-id=\"0\">Все</span>";
+                    while($row = mysqli_fetch_assoc($category)){
+                        $name = $row['name'];
+                        $id = $row["id"];
+                        if($id == 0 )continue;
+                        echo "<span data-id=\"$id\">$name</span>";
+                    }
+                ?>
             </div>
         </div>
         <div id="block3">
             <div id="portfolio">
+                <?php
+                    $portfolio = $db->query("SELECT id,title, tag FROM portfolio");
+                    while($row = mysqli_fetch_assoc($portfolio)){
+                        $id = $row["id"];
+                        $title = $row["title"];
+                        $tag = $row["tag"];
+                        $image = "url(/getimagefromportfolio.php?id=$id)";
+                        echo "<div 
+                            class=\"portfolio_item\" 
+                            data-id=\"$id\" 
+                            data-tag=\"$tag\"
+                            style=\"background-image:$image\">
+                            <span>$title</span>
+                        </div>";
+                    }
+                ?>
+                <!--
                 <div class="portfolio_item">
                     <span>some text</span>
                 </div>
@@ -116,6 +154,7 @@
                 <div class="portfolio_item"></div>
                 <div class="portfolio_item"></div>
                 <div class="portfolio_item"></div>
+                -->
             </div>
 
         </div>

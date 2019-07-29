@@ -72,7 +72,9 @@
 .portfolio_item {
     width: 25%;
     height: 25vw;
-    background: radial-gradient(black, transparent, purple);
+    background-image: radial-gradient(black, transparent, purple);
+    background-position: center center;
+    background-size: cover;
     position: relative;
     display: flex;
     align-items: center;
