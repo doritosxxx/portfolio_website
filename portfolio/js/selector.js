@@ -10,10 +10,16 @@ document.addEventListener("DOMContentLoaded", function() {
         let id = +$(this).attr("data-id");
 
         if (id === 0) {
-            $(".portfolio_item").show(300);
+            $(".portfolio_item")
+                //.removeClass("removed")
+                .show();
         } else {
-            $(`.portfolio_item[data-tag!=${id}]`).hide(300);
-            $(`.portfolio_item[data-tag=${id}]`).show(300);
+            $(`.portfolio_item[data-tag!=${id}]`)
+                //.addClass("removed")
+                .hide();
+            $(`.portfolio_item[data-tag=${id}]`)
+                //.removeClass("removed")
+                .show();
         }
 
     });

@@ -134,27 +134,21 @@
                         $title = $row["title"];
                         $tag = $row["tag"];
                         $image = "url(/getimagefromportfolio.php?id=$id)";
-                        echo "<div 
-                            class=\"portfolio_item\" 
-                            data-id=\"$id\" 
-                            data-tag=\"$tag\"
-                            style=\"background-image:$image\">
-                            <span>$title</span>
-                        </div>";
+                        $href = "project/index.php?id=$id";
+                        echo "
+                            <div 
+                                class=\"portfolio_item\" 
+                                data-id=\"$id\" 
+                                data-tag=\"$tag\"
+                                style=\"background-image:$image\">
+                                <a href=\"$href\">
+                                <div class=\"title\">$title</div>
+                                </a>
+                            </div>
+                        ";
                     }
                 ?>
-                <!--
-                <div class="portfolio_item">
-                    <span>some text</span>
-                </div>
-                <div class="portfolio_item">
-                    <span>lorem ipsum</span>
-                </div>
-                <div class="portfolio_item"></div>
-                <div class="portfolio_item"></div>
-                <div class="portfolio_item"></div>
-                <div class="portfolio_item"></div>
-                -->
+
             </div>
 
         </div>

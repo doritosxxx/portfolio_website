@@ -79,17 +79,32 @@
     display: flex;
     align-items: center;
     transition: 0.5s all;
-    color: transparent;
     justify-content: center;
     overflow: hidden;
     cursor: pointer;
 }
 
-.portfolio_item>span {
+.portfolio_item a {
     position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
-.portfolio_item:hover {
+.portfolio_item.removed {
+    transform: scale(0);
+}
+
+.portfolio_item .title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+    transition: 0.5s color;
+}
+
+.portfolio_item:hover .title {
     color: white;
 }
 
