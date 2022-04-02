@@ -1,10 +1,11 @@
 <?php
 $db_info =[
-    "username"=>"Qhve9YdhKG",
-    "db_name"=>"Qhve9YdhKG",
-    "password"=>"AvVYDL39iH",
-    "server"=>"remotemysql.com",
+    "username"=>"",
+    "db_name"=>"",
+    "password"=>"",
+    "server"=>"",
     "port"=>"3306"
+    // Данные не актуальны.
 ];
 
 $db = new mysqli(
